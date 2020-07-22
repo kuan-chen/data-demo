@@ -1,3 +1,17 @@
+# .gitignore file for git projects containing Stata files
+# Commercial statistical software: http://www.stata.com
+
+# Stata dataset and output files
+*.dta
+*.gph
+*.log
+*.smcl
+*.stpr
+*.stsem
+
+###
+
+# .gitignore file for R files
 # History files
 .Rhistory
 .Rapp.history
