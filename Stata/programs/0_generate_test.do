@@ -12,6 +12,7 @@ foreach i in 1 19 37 55{
 	keep in `i'/`ii'
 	describe
 	save ".\data\test_data_`j'", replace
+	disp as text "----- Subsample" as result `j'
 	restore
 	local ++j
 	}

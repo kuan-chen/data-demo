@@ -17,7 +17,7 @@ cd "$PROJ\data"
 * read the first data set
 use "test_data_1.dta", clear
 * generate an indicator for variable being larger than median in the sample
-gen mpg_above_med = (mpg > 50)
+gen mpg_above_med = (mpg > 20)
 gen price_above_med = (price > 5000)
 * generate a string for brand
 * this also demonstrates 3 of Nick Cox's "best string quartet outside Vienna"
@@ -33,7 +33,7 @@ drop name
 forv i = 1(1)4{
 	use "test_data_`i'.dta", clear
 	
-	gen mpg_above_med = (mpg > 50)
+	gen mpg_above_med = (mpg > 20)
 	gen price_above_med = (price > 5000)
 	tab mpg_above_med price_above_med
 	
